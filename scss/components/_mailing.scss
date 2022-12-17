@@ -1,0 +1,62 @@
+.mailing {
+    margin-top: 73px;
+    background: $accent-color;
+
+    &-wrapper {
+        padding: 22px 0;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 445px;
+        color: $white;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        max-width: 570px;
+        width: 100%;
+    }
+
+    &__label {
+        margin-right: 20px;
+        display: block;
+        width: 100%;
+    }
+    
+}
+
+.input-secondary {
+    padding: 15px 25px;
+    width: 100%;
+    outline: 0;
+    border: none;
+    transition: .3s;
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: $radius5;
+    -webkit-border-radius: $radius5;
+    -moz-border-radius: $radius5;
+    -ms-border-radius: $radius5;
+    -o-border-radius: $radius5;
+    background: rgba(255, 255, 255, 0.2);
+    &::placeholder {
+        color: $white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    &:focus {
+        box-shadow: 0 0 10px 0 rgba(111, 115, 238, .8);
+    }
+}

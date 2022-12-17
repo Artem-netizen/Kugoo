@@ -1,0 +1,74 @@
+.desc-serv {
+	padding-bottom: 100px;
+	&-wrap {
+		margin-bottom: 80px;
+		gap: 30px;
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		max-width: 1220px;
+		width: 100%;
+	}
+
+	&-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-full__img {
+		position: relative;
+		overflow: hidden;
+		border-radius: $radius10;
+		max-width: 703px;
+		width: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__img {
+		overflow: hidden;
+		border-radius: $radius10;
+		max-width: 540px;
+		width: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&-content {
+		max-width: 450px;
+	}
+
+	&-list {
+		margin-top: 15px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		li {
+			margin-bottom: 15px;
+			padding-left: 27px;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 17px;
+				height: 17px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-image: url('../img/icons/check-circle.svg');
+			}
+
+			&:last-child {
+            margin-bottom: 0;
+        }
+		}
+	}
+}
